@@ -12,7 +12,7 @@ final class Codility
 
         while ( strlen($subString) > 1 ) {
             if ( $maxGap > strlen($subString) ) {
-                breack;
+                break;
             }
             $pos = strpos($subString, '1');
             $subString = substr($subString,$pos+1,strlen($subString)-1);
